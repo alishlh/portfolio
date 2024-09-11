@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="" IE=edge>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+
+</head>
+
+<body class="">
+
+    <script>
+
+        let al = new SplitType('#al');
+        let characters = document.querySelectorAll('.char');
+
+        for (i = 0; i < characters.length; i++) {
+            characters[i].classList.add('translate-y-full');
+        }
+        gsap.to('.char', {
+            y: 0,
+            stagger: 0.05,
+            delay: 0.02,
+            duration: 0.5,
+        });
+
+    </script>
+    <!-- header -->
+    <header>
+        <div class="w-screen md:-32 h-screen mt-10 ">
+            <nav class="flex justify-between px-36 py-4">
+                <!-- div_logo -->
+                <div class="flex justify-items-center font-bold  text-4xl">
+                    <a class="text-grey-600 " href="">AL</a>
+                </div>
+
+                <ul class="list-none flex gap-12 items-center" <li><a class="text-grey-600 hover:font-bold "
+                        href="#services">Services</a></li>
+                    <li><a class="text-grey-600 hover:font-bold" href="#portfolio">Portfolio</a></li>
+                    <li><a class="text-grey-600 hover:font-bold" href="#skills">Skill</a></li>
+                    <li><a class="text-grey-600 hover:font-bold" href="#contact">Contact</a></li>
+                    <li>
+                        <a href="/.resume.pdf" target="_blank">
+                            <button class="py-2 px-3 border-2 border-solid bg-white cursor-pointer rounded">Resume
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section id="#hero" class="h-screen flex">
+                <!-- hero kiri -->
+                <div class="w-6/12 pt-56 pl-40 justify-items-center">
+                    <h3 class="text-xl relative pl-10 mb-2 uppercase tracking-widest bg-grey-600">My name is </h3>
+                    <h1 id="al" style=" clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);"
+                        class="text-4xl mb-2 font-bold">Al Ishlah</h1>
+                    <p class="w-9/12 font-thin">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor,
+                        reiciendis
+                        temporibus rem vero
+                        assumenda eveniet perspiciatis fuga, quo
+                        Dolor culpa optio consectetur amet!</p>
+                </div>
+                <!-- hero kanan -->
+                <div>
+                    <img class="rounded" src="/src/hero.svg" alt="">
+                </div>
+            </section>
+
+            <!-- burger -->
+        </div>
+
+    </header>
+    <!-- end header -->
+    <section id="services" class="h-96 mb-44 w-screen flex gap-12 mt-3">
+        <div class="">
+            <h3 class="text-xl relative uppercase bg-grey-600 tracking-widest text-center">Services</h3>
+            <h1 class="text-4xl text-center mb-16 font-bold">Spesialized In</h1>
+            <div class="flex gap-12 justify-center">
+                <!-- service 1 -->
+                <div class="w-1/5 h-72 bg-white border-2 border-solid shadow-2x rounded hover:bg-slate-200">
+                    <!-- grid -->
+                    <div class="">
+                        <div class="flex justify-center pt-10 ">
+                            <div class="w-9 h-9 bg-slate-200 p-2 rounded">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" viewBox="0 0 24 24">
+                                    <path
+                                        d="M22 4c-1.5 0-2.662 1.685-1.598 3.194.535.759.406 1.216.045 1.749-.765 1.127-1.872 2.057-3.447 2.057-2.521 0-3.854-2.083-4.131-3.848-.096-.614-.15-1.074.436-1.644.402-.39.695-.904.695-1.508 0-1.104-.896-2-2-2s-2 .896-2 2c0 .604.293 1.118.695 1.508.586.57.531 1.03.436 1.644-.277 1.765-1.61 3.848-4.131 3.848-1.575 0-2.682-.93-3.447-2.058-.362-.532-.491-.989.045-1.748 1.064-1.509-.098-3.194-1.598-3.194-1.104 0-2 .896-2 2 0 .797.464 1.495 1.144 1.808.825.38.856 1.317.856 2.171v12.021h20v-12.021c0-.854.031-1.792.856-2.171.68-.313 1.144-1.011 1.144-1.808 0-1.104-.896-2-2-2zm-10 6.297c1.977 2.96 5.58 3.354 8 1.851v3.852h-16v-3.852c2.398 1.49 6.01 1.131 8-1.851zm-8 9.703v-2h16v2h-16z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h4 class="text-center font-bold mt-6">UI/UX Design</h4>
+                        <p class="w-3/4 text-center ml-10 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.mlkmklmlknnlkngkj
+                            Reiciendis..</p>
+                    </div>
+                </div>
+                <!-- service 2 -->
+                <div class="w-1/5 h-72 bg-white border-2 border-solid shadow-2x rounded hover:bg-slate-200">
+                    <!-- grid -->
+                    <div class="">
+                        <div class="flex justify-center pt-10 ">
+                            <div class="w-9 h-9 bg-slate-200 p-2 rounded">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" viewBox="0 0 24 24">
+                                    <path
+                                        d="M22 4c-1.5 0-2.662 1.685-1.598 3.194.535.759.406 1.216.045 1.749-.765 1.127-1.872 2.057-3.447 2.057-2.521 0-3.854-2.083-4.131-3.848-.096-.614-.15-1.074.436-1.644.402-.39.695-.904.695-1.508 0-1.104-.896-2-2-2s-2 .896-2 2c0 .604.293 1.118.695 1.508.586.57.531 1.03.436 1.644-.277 1.765-1.61 3.848-4.131 3.848-1.575 0-2.682-.93-3.447-2.058-.362-.532-.491-.989.045-1.748 1.064-1.509-.098-3.194-1.598-3.194-1.104 0-2 .896-2 2 0 .797.464 1.495 1.144 1.808.825.38.856 1.317.856 2.171v12.021h20v-12.021c0-.854.031-1.792.856-2.171.68-.313 1.144-1.011 1.144-1.808 0-1.104-.896-2-2-2zm-10 6.297c1.977 2.96 5.58 3.354 8 1.851v3.852h-16v-3.852c2.398 1.49 6.01 1.131 8-1.851zm-8 9.703v-2h16v2h-16z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h4 class="text-center font-bold mt-6">UI/UX Design</h4>
+                        <p class="w-3/4 text-center ml-10 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.mlkmklmlknnlkngkj
+                            Reiciendis..</p>
+                    </div>
+                </div>
+                <!-- servvice 3 -->
+                <div class="w-1/5 h-72 border-2 border-solid bg-white shadow-2x  rounded hover:bg-slate-200">
+                    <!-- grid -->
+                    <div>
+                        <div class="flex justify-center pt-10">
+                            <div class="w-9 h-9 rounded p-2 bg-slate-200">
+                                <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M22 4c-1.5 0-2.662 1.685-1.598 3.194.535.759.406 1.216.045 1.749-.765 1.127-1.872 2.057-3.447 2.057-2.521 0-3.854-2.083-4.131-3.848-.096-.614-.15-1.074.436-1.644.402-.39.695-.904.695-1.508 0-1.104-.896-2-2-2s-2 .896-2 2c0 .604.293 1.118.695 1.508.586.57.531 1.03.436 1.644-.277 1.765-1.61 3.848-4.131 3.848-1.575 0-2.682-.93-3.447-2.058-.362-.532-.491-.989.045-1.748 1.064-1.509-.098-3.194-1.598-3.194-1.104 0-2 .896-2 2 0 .797.464 1.495 1.144 1.808.825.38.856 1.317.856 2.171v12.021h20v-12.021c0-.854.031-1.792.856-2.171.68-.313 1.144-1.011 1.144-1.808 0-1.104-.896-2-2-2zm-10 6.297c1.977 2.96 5.58 3.354 8 1.851v3.852h-16v-3.852c2.398 1.49 6.01 1.131 8-1.851zm-8 9.703v-2h16v2h-16z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h4 class="font-bold text-center mt-5">UI/UX Design</h4>
+                        <p class="w-3/4 text-center ml-10 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.mlkmklmlknnlkngkj
+                            Reiciendis..</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="w-screen h-96 mb-96">
+        <div>
+            <h3 class="text-xl uppercase tracking-widest bg-grey-600 text-center pt-20">My Works</h3>
+            <h1 class="text-4xl text-center font-bold">Featured Portfolio</h1>
+            <!-- grid -->
+            <div class="flex justify-center gap-12 mt-16">
+
+                <!-- grid-parent-1 -->
+                <div class="w-1/4 h-auto bg-slate-100 rounded p-2 hover:bg-slate-200">
+                    <!-- child -->
+                    <div>
+                        <img class="rounded w-full flex justify-center" src="/src/portfolio/p1.jpeg" width="" alt="">
+                    </div>
+
+                    <!-- info-porfilio -->
+                    <div class="p-2">
+                        <div class="flex justify-between">
+                            <h4 class="text-xl text-xl font-semibold">Agency Website</h4>
+                            <a href="/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- tags portfolio -->
+                        <div class="flex justify-between py-4 px-3">
+                            <div class="font-semibold">React</div>
+                            <div class="font-semibold">Tailwind </div>
+                        </div>
+
+                        <p class="w-11/12 text-center font-thin">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Deleniti necessitatibus
+                            voluptatibus accusamus velit illum, quibusdam a fuga sed pariatur quod esse consequatur sunt
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-1/4 p-2  bg-slate-100 rounded h-auto hover:bg-slate-200">
+                    <!-- child -->
+                    <div>
+                        <img class="rounded w-full" src="/src/portfolio/p1.jpeg" alt="">
+                    </div>
+
+                    <!-- info-porfilio -->
+                    <div>
+
+                        <!-- tags portfolio -->
+                        <div class="p-2">
+                            <div class="flex justify-between">
+                                <h4 class="text-xl text-xl font-semibold">Agency Website</h4>
+                                <a href="/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <!-- tags portfolio -->
+                            <div class="flex justify-between py-4 px-3">
+                                <div class="font-semibold">React</div>
+                                <div class="font-semibold">Tailwind </div>
+                            </div>
+
+                            <p class="w-11/12 font-thin text-center">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit.
+                                Deleniti necessitatibus
+                                voluptatibus accusamus velit illum, quibusdam a fuga sed pariatur quod esse consequatur
+                                sunt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-1/4 p-2  bg-slate-100 rounded h-auto hover:bg-slate-200">
+                    <!-- child -->
+                    <div>
+                        <img class="rounded w-full" src="/src/portfolio/p1.jpeg" alt="">
+                    </div>
+
+                    <!-- info-porfilio -->
+                    <div class="p-2">
+                        <div class="flex justify-between">
+                            <h4 class="text-xl text-xl font-semibold">Agency Website</h4>
+                            <a href="/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M6 17c2.269-9.881 11-11.667 11-11.667v-3.333l7 6.637-7 6.696v-3.333s-6.17-.171-11 5zm12 .145v2.855h-16v-12h6.598c.768-.787 1.561-1.449 2.339-2h-10.937v16h20v-6.769l-2 1.914z" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- tags portfolio -->
+                        <div class="flex justify-between px-4 py-4">
+                            <div class="font-semibold">React</div>
+                            <div class="font-semibold">Tailwind </div>
+                        </div>
+
+                        <p class="w-11/12 text-center font-thin">Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit.
+                            Deleniti necessitatibus
+                            voluptatibus accusamus velit illum, quibusdam a fuga sed pariatur quod esse consequatur sunt
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="p-4  w-screen h-screen">
+        <!-- parent -->
+
+        <h3 class="text-center ml-10 pt-16 bg-grey-600 text-xl uppercase tracking-widest">learning path</h3>
+        <h1 class="text-center ml-10  bg-grey-600 text-4xl pt-4 font-bold">Skill & Education</h1>
+
+        <!-- skill -->
+        <div class="flex justify-between p-10 pt-20 items-center ">
+
+            <!-- left -->
+            <div class="ml-56">
+                <div class="mb-5">
+                    <h4 class="font-bold">Medina University</h4>
+                    <p class="font-thin">Master's Degree - Software Engginer</p>
+                    <h4 class="font-semibold">2019 - 2024</h4>
+                </div>
+                <div class="mb-5">
+                    <h4 class="font-bold">Medina University</h4>
+                    <p class="font-thin">Master's Degree - Software Engginer</p>
+                    <h4 class="font-semibold">2019 - 2024</h4>
+                </div>
+                <div class="mb-5">
+                    <h4 class="font-bold">Medina University</h4>
+                    <p class="font-thin">Master's Degree - Software Engginer</p>
+                    <h4 class="font-semibold">2019 - 2024</h4>
+                </div>
+
+            </div>
+            <!-- right -->
+            <div class="w-2/4 ">
+                <p class="w-10/12 text-start font-thin">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Suscipit
+                    commodi vero
+                    rerum
+                    totam enim
+                    praesentium excepturi, dignissimos ipsa eum numquam alias iste, fuga placeat nostrum sunt
+                    dolore
+                    inventore cumque eius. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
+                    reprehenderit beatae dolores voluptatum error dolor quia qui sapiente fugiat dolorem, est
+                    libero
+                    repellendus amet harum sequi earum animi cupiditate dicta.</p>
+
+                <div class="flex justify-between py-10 ">
+                    <ul class="list-disc pl-5 ">
+                        <li>React JS</li>
+                        <li>Node JS</li>
+                        <li>MongoDB</li>
+                        <li>HTML</li>
+                        <li>Vue JS</li>
+                    </ul>
+                    <ul class="list-disc pr-96">
+                        <li>CSS</li>
+                        <li>TypeScript</li>
+                        <li>Next JS</li>
+                        <li>QraphQL</li>
+                        <li>Anggular JS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <section id="contact" class="w-screen h-screen">
+        <div class="border-2 border-solid w-11/12 ml-20 px-4 py-16 justify-center">
+            <h1 class="text-center mb-10 font-bold text-4xl">Contact</h1>
+            <div class="flex ">
+                <div class="w-2/4 flex justify-center ml-20">
+                    <form action="" class="w-9/12">
+
+                        <input class="w-full h-11 rounded bg-white mb-5 border-2 border-solid hover:bg-slate-100"
+                            type="text" placeholder="  name" name="name" id="name">
+
+                        <input class="w-full h-11 rounded bg-white mb-5 border-2 border-solid hover:bg-slate-100"
+                            type="email" placeholder="  email" name="email" id="email">
+
+
+
+                        <textarea class="w-full h-36 border-2 mb-5 border-solid rounded hover:bg-slate-100"
+                            placeholder="  message" name="message" id="message" cols="30" rows="10"></textarea>
+
+
+                        <button
+                            class="  border-1  bg-slate-200 p-2 w-full transition aese-in-out delay-150 hover:-transition-y-1 hover:slale-110 hover:bg-slate-600 duration-300 rounded">Send
+                            Message</button>
+
+                    </form>
+                </div>
+                <!-- right -->
+                <div class="w-2/4 pl-32">
+                    <!-- item Contact 1 -->
+                    <div class="flex items-center mb-5">
+                        <!-- icon -->
+                        <div class="bg-slate-100 w-9 h-9 p-2 rounded">
+                            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-3.148 0-6 2.553-6 5.702 0 4.682 4.783 5.177 6 12.298 1.217-7.121 6-7.616 6-12.298 0-3.149-2.851-5.702-6-5.702zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm12 16l-6.707-2.427-5.293 2.427-5.581-2.427-6.419 2.427 4-9 3.96-1.584c.38.516.741 1.08 1.061 1.729l-3.523 1.41-1.725 3.88 2.672-1.01 1.506-2.687-.635 3.044 4.189 1.789.495-2.021.465 2.024 4.15-1.89-.618-3.033 1.572 2.896 2.732.989-1.739-3.978-3.581-1.415c.319-.65.681-1.215 1.062-1.731l4.021 1.588 3.936 9z" />
+                            </svg>
+                        </div>
+                        <!-- info-contact   -->
+                        <div class="pl-5">
+                            <h4 class="font-bold">Adress</h4>
+                            <a href="" class="font-thin hover:font-semibold">
+                                2345, Al ishlah, curup bengkulu
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- item Contact 2 -->
+                    <div class="flex items-center mb-5">
+                        <!-- icon -->
+                        <div class="bg-slate-100 w-9 h-9 p-2 rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-full" viewBox="0 0 24 24">
+                                <path
+                                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                            </svg>
+                        </div>
+                        <!-- info-contact   -->
+                        <div class="pl-5">
+                            <h4 class="font-bold">No Telp</h4>
+                            <a href="" class="font-thin hover:font-semibold">+62 82373840010</a>
+                        </div>
+                    </div>
+
+                    <!-- item Contact -->
+                    <div class="flex items-center mb-5">
+                        <!-- icon -->
+                        <div class="w-9 h-9 bg-slate-100 rounded p-2">
+                            <svg class="w-full h-full " xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                                clip-rule="evenodd">
+                                <path
+                                    d="M22.288 21h-20.576c-.945 0-1.712-.767-1.712-1.712v-13.576c0-.945.767-1.712 1.712-1.712h20.576c.945 0 1.712.767 1.712 1.712v13.576c0 .945-.767 1.712-1.712 1.712zm-10.288-6.086l-9.342-6.483-.02 11.569h18.684v-11.569l-9.322 6.483zm8.869-9.914h-17.789l8.92 6.229s6.252-4.406 8.869-6.229z" />
+                            </svg>
+                        </div>
+                        <!-- info-contact   -->
+                        <div class="pl-5">
+                            <h4 class="font-bold">Email</h4>
+                            <a href="" class="font-thin hover:font-semibold">alishlh@gmail.com </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+<footer id="footer" class="mb-32">
+    <div class="flex justify-center gap-5">
+        <a href="" class="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+        </a>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-.139 9.237c.209 4.617-3.234 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.515.098 1.021.069 1.482-.056-1.579-.317-2.668-1.739-2.633-3.26.442.246.949.394 1.486.411-1.461-.977-1.875-2.907-1.016-4.383 1.619 1.986 4.038 3.293 6.766 3.43-.479-2.053 1.08-4.03 3.199-4.03.943 0 1.797.398 2.395 1.037.748-.147 1.451-.42 2.086-.796-.246.767-.766 1.41-1.443 1.816.664-.08 1.297-.256 1.885-.517-.439.656-.996 1.234-1.639 1.697z" />
+        </svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+                d="M12.036 5.339c-3.635 0-6.591 2.956-6.593 6.589-.001 1.483.434 2.594 1.164 3.756l-.666 2.432 2.494-.654c1.117.663 2.184 1.061 3.595 1.061 3.632 0 6.591-2.956 6.592-6.59.003-3.641-2.942-6.593-6.586-6.594zm3.876 9.423c-.165.463-.957.885-1.337.942-.341.051-.773.072-1.248-.078-.288-.091-.657-.213-1.129-.417-1.987-.858-3.285-2.859-3.384-2.991-.099-.132-.809-1.074-.809-2.049 0-.975.512-1.454.693-1.653.182-.2.396-.25.528-.25l.38.007c.122.006.285-.046.446.34.165.397.561 1.372.611 1.471.049.099.083.215.016.347-.066.132-.099.215-.198.33l-.297.347c-.099.099-.202.206-.087.404.116.198.513.847 1.102 1.372.757.675 1.395.884 1.593.983.198.099.314.083.429-.05.116-.132.495-.578.627-.777s.264-.165.446-.099 1.156.545 1.354.645c.198.099.33.149.38.231.049.085.049.482-.116.945zm3.088-14.762h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-6.967 19.862c-1.327 0-2.634-.333-3.792-.965l-4.203 1.103 1.125-4.108c-.694-1.202-1.059-2.566-1.058-3.964.002-4.372 3.558-7.928 7.928-7.928 2.121.001 4.112.827 5.609 2.325s2.321 3.491 2.32 5.609c-.002 4.372-3.559 7.928-7.929 7.928z" />
+        </svg>
+
+
+
+
+    </div>
+    <div class="flex justify-center mt-5 ">
+        <p>Copyright &copy; <strong class="font-thin hover:font-semibold"> Al Ishlah</strong> 2024 </p>
+    </div>
+</footer>
+
+</html>
